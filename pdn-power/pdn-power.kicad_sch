@@ -487,6 +487,149 @@
 				)
 			)
 		)
+		(symbol "global:CL05A105KO5NNNC"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CL05A105KO5NNNC"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "global:C0402"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL05A105KO5NNNC_1uF-105-10-16V_C29266.html"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C29266"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CL05A105KO5NNNC_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.51 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.51 2.03) (xy -0.51 -2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.51 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.51 2.03) (xy 0.51 -2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "global:DW01A_C351410"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3155,6 +3298,12 @@
 		(uuid "2865b9a1-8d5c-423f-8322-e7a98f072cc4")
 	)
 	(junction
+		(at 232.41 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ab56ef5-69c4-427f-8646-4aeb543ff51b")
+	)
+	(junction
 		(at 102.87 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3171,12 +3320,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4cf3c21e-4538-4726-b40a-fbf61f69c159")
-	)
-	(junction
-		(at 232.41 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ec6ebda-1228-4f84-8fb0-3444e6d756b3")
 	)
 	(junction
 		(at 156.21 111.76)
@@ -3633,6 +3776,16 @@
 			(type default)
 		)
 		(uuid "3ed9294f-352d-4c3d-8a84-a544ae9f3f30")
+	)
+	(wire
+		(pts
+			(xy 232.41 106.68) (xy 232.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e407e4-9577-4825-bf62-02c533ef2a31")
 	)
 	(wire
 		(pts
@@ -4606,16 +4759,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 106.68) (xy 232.41 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de739b51-9527-43cb-b63d-7bffb51a933d")
-	)
-	(wire
-		(pts
 			(xy 45.72 74.93) (xy 53.34 74.93)
 		)
 		(stroke
@@ -5585,32 +5728,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 236.22 106.68 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 255.27 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0a5c4398-197f-422d-9b28-d1c03a954860")
-		(property "Reference" "C6"
-			(at 236.22 100.33 90)
+		(fields_autoplaced yes)
+		(uuid "07ef9b25-111e-489a-a4f2-8d76d51bce9e")
+		(property "Reference" "H2"
+			(at 257.81 122.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 236.22 102.87 90)
+		(property "Value" "MountingHole"
+			(at 257.81 125.095 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "global:C0805"
-			(at 240.03 105.7148 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_TopBottom"
+			(at 255.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5619,7 +5765,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 106.68 0)
+			(at 255.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5628,33 +5774,18 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 106.68 0)
+			(at 255.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "LCSC Part" "C2932475"
-			(at 236.22 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "321da70a-7927-41f1-b849-f6f61bf94cc6")
-		)
-		(pin "2"
-			(uuid "1d92104e-14bd-4dd1-8d21-11c4a166b66d")
 		)
 		(instances
-			(project "pdn-power"
+			(project "power-v2"
 				(path "/df0bc267-025e-4c4e-a09b-51ff87d0c1db"
-					(reference "C6")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -5775,7 +5906,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "GREEN"
 			(at 52.07 121.92 90)
 			(effects
 				(font
@@ -5811,7 +5942,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C965799"
+		(property "LCSC Part" "C965804"
 			(at 59.69 119.38 0)
 			(effects
 				(font
@@ -6971,6 +7102,83 @@
 			(project "pdn-power"
 				(path "/df0bc267-025e-4c4e-a09b-51ff87d0c1db"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "global:CL05A105KO5NNNC")
+		(at 236.22 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "853b88b5-2dbd-43a4-86f2-425ea60312cd")
+		(property "Reference" "C6"
+			(at 236.22 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 236.22 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "global:C0402"
+			(at 236.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL05A105KO5NNNC_1uF-105-10-16V_C29266.html"
+			(at 236.22 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C29266"
+			(at 236.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "752d29a2-cd82-469f-a2df-93b645ef3c1d")
+		)
+		(pin "2"
+			(uuid "f8384aea-7254-4ebe-bcd1-e9df656be6ce")
+		)
+		(instances
+			(project ""
+				(path "/df0bc267-025e-4c4e-a09b-51ff87d0c1db"
+					(reference "C6")
 					(unit 1)
 				)
 			)
